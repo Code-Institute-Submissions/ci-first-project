@@ -1,7 +1,27 @@
+html, body {
+    height: 100%;
+    font-family: 'PT Sans', sans-serif;
+    color: red;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: grey;
+}
+
 section article {
     float: left;
 }
 
-.col-12 {
-    background-color: blue;
+section {
+    height: 100vh;
+    background-image: url(../band-assets/images/monkees.jpg);
+    background-size: cover;
 }
+
+.navbar {
+    text-decoration: none;
+    list-style: none;
+}
+

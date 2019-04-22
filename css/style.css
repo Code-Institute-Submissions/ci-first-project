@@ -1,27 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Dokdo|Lora:400,700|Montserrat:400,500,600,700');
+
 html, body {
     height: 100%;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: red;
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    background-color: grey;
-}
+/*------------------------------------------------------------- Colors */
 
-section article {
-    float: left;
+nav {
+    background-color: #272727;
 }
 
 section {
-    height: 100vh;
-    background-image: url(../band-assets/images/monkees.jpg);
-    background-size: cover;
+    max-height: 100vh;
+    background-image: url(../assets/images/monkees.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
-.navbar {
+.monkees-brand {
     text-decoration: none;
-    list-style: none;
+    color: #fafafa;
+    font-family: 'Dokdo', cursive;
+    font-size: 22px;
+    text-transform: uppercase;
 }
 
+#navbarMenu ul li a {
+    text-align: right;
+}
+
+.band-name {
+    margin: 0 auto;
+    font-size: 80px;
+    min-height: 95vh;
+    padding-top: 30vh;
+}
+
+.carousel-size img {
+    width: 50%;
+    height: 35%;
+    margin: auto;
+}
+
+
+@media (max-width: 768px) {
+    .member-photo {
+        justify-content: center;
+        text-align: center;
+    }
+}

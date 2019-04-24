@@ -18,7 +18,7 @@
 	<!-- navigation-bar -->
 
 	<header>
-		<nav class="navbar navbar-dark navbar-expand-md">
+		<nav class="navbar navbar-dark navbar-expand-md fixed-top">
 			<a href="/" class="navbar-brand monkees-brand text-uppercase my-auto">The Monkees</a>
 			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
 				<span class="navbar-toggler-icon"></span>
@@ -26,27 +26,27 @@
 			<div id="navbarMenu" class="collapse navbar-collapse">
 				<ul class="nav navbar-nav mr-auto">
 					<li class="nav-item">
-						<a href="index.html#music" class="nav-link">
+						<a href="#music" class="nav-link">
 							<!--olhar bootstrap docs classes nav-pills+active para fazer os highlighting do lugar que o usuario esta no site-->
 							Music
 						</a>
 					</li>
 					<li class="nav-item">
-						<a href="index.html#photos" class="nav-link">
+						<a href="#photos" class="nav-link">
 							Photos
 						</a>
 					</li>
 					<li class="nav-item">
-						<a href="index.html#videos" class="nav-link">
+						<a href="#videos" class="nav-link">
 							Videos
 						</a>
 					</li>
 					<li class="nav-item">
-						<a href="/about.html" class="nav-link">
-							About the band
+						<a href="/members.html" class="nav-link">
+							Members
 						</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item active">
 						<a href="/contact.html" class="nav-link">
 							Contact
 						</a>
@@ -63,7 +63,6 @@
 	<section>
 
 		<div class="container">
-			<!-- container-fluid ensures that it responds the way that we want it to, or expect it to, on various device sizes -->
 			<div class="row bg-color-contact">
 				<div class="col">
 					<h3 class="contact-heading uppercase text-center">

@@ -3,7 +3,8 @@
 html, body {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
-    color: red;
+    color: #fafafa;
+    background-color: black;
 }
 
 /*------------------------------------------------------------- Colors */
@@ -12,43 +13,94 @@ nav {
     background-color: #272727;
 }
 
-section {
-    max-height: 100vh;
-    background-image: url(../assets/images/monkees.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+/*------------------------------------------------------------- Page section sizes */
+
+.section-size {
+    height: 95vh;
+}
+
+/*------------------------------------------------------------- Special margins */
+
+.carousel-size img {
+    max-width: 50%;
+    max-height: 35%;
+    margin: 75px auto;
+}
+
+:target{
+  padding-top:70px; /* = to height of navbar */
+  margin-top:-70px;
+}
+
+.music-top-margins {
+    margin-top: 100px;
 }
 
 .monkees-brand {
     text-decoration: none;
     color: #fafafa;
     font-family: 'Dokdo', cursive;
-    font-size: 22px;
     text-transform: uppercase;
+}
+
+.band-name {
+    font-size: 80px;
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+.member-photo {
+    margin: 70px 0 35px;
+}
+
+#photos, 
+#videos, 
+#music {
+    font-size: 60px;
+}
+
+.contact-heading {
+    margin-top: 60px;
+    margin-bottom: 25px;
 }
 
 #navbarMenu ul li a {
     text-align: right;
 }
 
-.band-name {
-    margin: 0 auto;
-    font-size: 80px;
-    min-height: 95vh;
-    padding-top: 30vh;
+.article-paragraph {
+    margin-top: 15px;
+    letter-spacing: 2px;
+    font-size: .9rem;
 }
 
-.carousel-size img {
-    width: 50%;
-    height: 35%;
-    margin: auto;
+
+.wiki-links {
+    font-size: 10px;
+}
+
+.copyright {
+    font-size: 9px;
+    color: #fafafa;
 }
 
 
 @media (max-width: 768px) {
+    .fixed-top {
+        position: absolute;
+    }
+    :target {
+        padding-top: 0;
+        margin-top: 0;
+    }
     .member-photo {
         justify-content: center;
         text-align: center;
+    }
+    .music-top-margins {
+        margin-top: 55px;
+    }
+    .mobile-video-margin {
+        margin-top: -450px;
     }
 }

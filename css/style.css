@@ -1,10 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Dokdo|Lora:400,700|Montserrat:400,500,600,700');
 
-html, body {
-    height: 100%;
+body {
+    min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
     color: #fafafa;
     background-color: black;
+    letter-spacing: 2px;
+    position: relative;
+    margin: 0;
+}
+
+/*------------------------------------------------------------- Backgrounds */
+
+.music-bg,
+.video-bg {
+    background-image: url("../assets/images/blue.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    /*height: 70vh;*/
+}
+
+.video-bg {
+    height: 50vh;
 }
 
 /*------------------------------------------------------------- Colors */
@@ -13,11 +31,16 @@ nav {
     background-color: #272727;
 }
 
+.active a {
+    background-color: #2098D1;
+}
+
 /*------------------------------------------------------------- Page section sizes */
 
 .section-size {
     height: 95vh;
 }
+
 
 /*------------------------------------------------------------- Special margins */
 
@@ -28,19 +51,34 @@ nav {
 }
 
 :target{
-  padding-top:70px; /* = to height of navbar */
-  margin-top:-70px;
+  padding-top: 70px;
+  margin-top: -70px;
 }
 
 .music-top-margins {
     margin-top: 100px;
 }
 
-.monkees-brand {
-    text-decoration: none;
-    color: #fafafa;
-    font-family: 'Dokdo', cursive;
-    text-transform: uppercase;
+#music1Player,
+#music2Player,
+#music3Player,
+#music4Player {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.photos-margin {
+    margin-top: 80px;
+}
+
+.button-margin {
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .band-name {
@@ -66,14 +104,20 @@ nav {
 
 #navbarMenu ul li a {
     text-align: right;
+    text-decoration: none;
 }
 
 .article-paragraph {
     margin-top: 15px;
-    letter-spacing: 2px;
     font-size: .9rem;
 }
 
+.monkees-brand {
+    text-decoration: none;
+    color: #fafafa;
+    font-family: 'Dokdo', cursive;
+    text-transform: uppercase;
+}
 
 .wiki-links {
     font-size: 10px;
@@ -83,6 +127,8 @@ nav {
     font-size: 9px;
     color: #fafafa;
 }
+
+
 
 
 @media (max-width: 768px) {
@@ -103,4 +149,8 @@ nav {
     .mobile-video-margin {
         margin-top: -450px;
     }
+    /*.music-bg,*/
+    /*.video-bg {*/
+    /*    height: 95vh;*/
+    /*}*/
 }

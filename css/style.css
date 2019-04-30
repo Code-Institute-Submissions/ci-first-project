@@ -12,13 +12,11 @@ body {
 
 /*------------------------------------------------------------- Backgrounds */
 
-.music-bg,
-.video-bg {
+.bg-img {
     background-image: url("../assets/images/blue.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    /*height: 70vh;*/
 }
 
 .video-bg {
@@ -41,6 +39,12 @@ nav {
     height: 95vh;
 }
 
+.contact-section {
+    min-height: 97.6vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 /*------------------------------------------------------------- Special margins */
 
@@ -121,6 +125,7 @@ nav {
 
 .wiki-links {
     font-size: 10px;
+    color: #2098D1;
 }
 
 .copyright {

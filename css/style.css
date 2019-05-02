@@ -29,6 +29,10 @@ nav {
     background-color: #272727;
 }
 
+nav div ul li .active {
+    background-color: #2098D1;
+}
+
 .active a {
     background-color: #2098D1;
 }
@@ -44,6 +48,12 @@ nav {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 /*------------------------------------------------------------- Special margins */
@@ -154,8 +164,4 @@ nav {
     .mobile-video-margin {
         margin-top: -450px;
     }
-    /*.music-bg,*/
-    /*.video-bg {*/
-    /*    height: 95vh;*/
-    /*}*/
 }
